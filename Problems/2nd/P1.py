@@ -28,7 +28,7 @@ for i, psi_i in enumerate([psi1_n, psi2_n, psi3_n], 1):
 
 # b) Compute the outer products for psi_1, psi_2, and psi_3.
 for i, psi_i in enumerate([psi1_n, psi2_n, psi3_n], 1):
-    for j, state_j in enumerate([psi1_n, psi2_n, psi3_n], 1):
+    for j, psi_j in enumerate([psi1_n, psi2_n, psi3_n], 1):
         outer_product = psi_i * psi_j.dag()  
 
         print(f"|{i}><{j}| =\n", outer_product)   
